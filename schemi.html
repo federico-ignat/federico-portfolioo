@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemi Elettrici</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+    <header>
+
+        <p id="clock"></p>
+
+        <script>
+            setInterval(() => {
+                document.getElementById("clock").innerText = 
+                new Date().toLocaleTimeString();
+            }, 1000);
+        </script>
+        <h1>⚡Schemi elettrici</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="componenti.html">Componenti</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="progetti.html">Progetti</a>
+        <a href="laboratorio.html">Laboratorio</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="cablaggio.html">Cablaggio</a>
+    </nav>
+    </header>
+
+    <div class="titolo-sezione">
+        <h2>Start/ Stop Motore</h2>
+    </div>
+
+    <div class="card">
+        <pre>
+            [Pulsante Start]
+                    |
+                    |
+                [PLC] 
+                    |
+                    |
+            [Contatore] 
+                    |
+                    |
+                [Motore]
+        </pre>
+    </div>
+
+    <div class="titolo-sezione">
+        <h2>PLC + Sensore</h2>
+    </div>
+    
+    <div class="card">
+        <pre>
+             [Sensore] 
+                 |
+                 |
+               [PLC]
+                 |
+                 |
+             [LAMPADA]
+        </pre>
+    </div>
+    
+    <div class="titolo-sezione">
+        <h2>Arresto di Emergenza</h2>
+    </div>
+
+    <div class="card">
+        <pre>
+            [Emergenza] 
+                 |
+                 |
+            [Blocco PLC]
+                 |
+                 |
+           [Motore Spento]
+        </pre>
+    </div>
+
+    <footer>
+        <p>© 2026 Catalogo Cablaggi</p>
+    </footer>
+</body>
+</html>

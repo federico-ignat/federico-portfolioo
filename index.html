@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catalogo Cablaggio</title>
+    <div class="stato-sistema">
+         🟢 Sistema Operativo | 🔌 Componenti Caricati | ⚡ Database Attivo
+    </div>
+</head>
+
+<body>
+
+    <header>
+        
+       <p id="clock"></p>
+
+        <script>
+            setInterval(() => {
+                document.getElementById("clock").innerText = 
+                new Date().toLocaleTimeString();
+            }, 1000);
+        </script>
+        <h1>Catalogo Cablaggio</h1>
+      
+        <nav>
+
+            <a href="componenti.html">Componenti</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="schemi.html">Schemi</a>
+            <a href="progetti.html">Progetti</a>
+            <a href="laboratorio.html">Laboratorio</a>
+            <a href="contatti.html">Contatti</a>
+            <a href="cablaggio.html">Cablaggio</a>
+        </nav>
+    </header>
+
+    
+
+    <section class="hero">
+        <h2>Inizia a diventare un esperto sui cablaggi industriali</h2>
+
+       <p class="slogan">
+            Dall'apprendimento dei componenti fino ai progetti industriali.
+        </p>
+
+        <a href="quiz.html" style="color: white;">Inizia il percorso</a>
+        
+        <p class="slogan">
+            Scopri i componenti, collegamenti e tecniche utilizzate nei quadri elettrici industriali.
+        </p>
+        
+        <a href="cablaggio.html" style="color: white">Scopri di più</a>
+    </section>
+    
+    <div class="separator"></div>
+
+    <section class="features">
+        
+        <a href="componenti.html" class="card-link">
+        <div class="card">
+            <h3>🔌 Componenti</h3>
+            <p>PLC, sensori, relè, contattori e inverter.</p>
+        </div>
+
+        <a href="quiz.html" class="card-link">
+        <div class="card">
+            <h3>⚙️ Quiz</h3>
+            <p>Domande per verificare le tue conoscenze.</p>
+        </div>
+
+        <a href="schemi.html" class="card-link">
+        <div class="card">
+            <h3>⚡ Schemi</h3>
+            <p>Esempi pratici di collegamenti industriali</p>
+        </div>
+
+        <a href="progetti.html" class="card-link">
+        <div class="card">
+            <h3>🏭Progetti</h3>
+            <p>Guarda applicazioni industriali reali.</p>
+        </div>
+
+    </section>
+    
+    <div class="separator"></div>
+
+    <section>
+
+        <h2>Percorso di Apprendimento</h2>
+
+        <ul>
+            <li>Conoscere i PLC</li>
+            <li>Studiare i sensori</li>
+            <li>Imparare i relè</li>
+            <li>Capire i contatori</li>
+            <li>Leggere uno schema elettrico</li>
+            <li>Realizzare un semplice cablaggio</li>
+        </ul>
+    </section>
+    <br>
+    
+
+    <footer>
+        <p>© 2026 Catalogo Cablaggi</p>
+    </footer>
+   
+
+</body>
+</html>

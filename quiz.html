@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Cablaggi</title>
+</head>
+<body>
+
+    <header>
+
+        <p id="clock"></p>
+
+        <script>
+            setInterval(() => {
+                document.getElementById("clock").innerText = 
+                new Date().toLocaleTimeString();
+            }, 1000);
+        </script>
+        <h1>Quiz Cablaggi</h1>
+
+            <nav>
+
+            <a href="index.html">Home</a>
+            <a href="componenti.html">Componenti</a>
+            <a href="schemi.html">Schemi</a>
+            <a href="progetti.html">Progetti</a>
+            <a href="laboratorio.html">Laboratorio</a>
+            <a href="contatti.html">Contatti</a>
+            <a href="cablaggio.html">Cablaggio</a>
+        </nav>
+    </header>
+   
+
+     
+
+    <div class="container">
+        <div class="card">
+
+            <h2>
+                Qual è il colore del conduttore PE?
+            </h2>
+
+            <button onclick="corretto()">
+                Giallo/Verde
+            </button>
+
+            <button onclick="sbagliato()">
+                Blu
+            </button>
+
+            <button onclick="sbagliato()">
+                bianco
+            </button>
+
+            <button onclick="sbagliato()">
+                nero
+            </button>
+
+            <h3 id="risultato"></h3>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>A quale tensione lavora normalmente un PLC industriale?</h2>
+
+            <button onclick="corretto()">
+                24V DC
+            </button>
+
+            <button onclick="sbagliato()">
+                5V
+            </button>
+
+            <button onclick="sbagliato()">
+                1000V
+            </button>
+
+            <button onclick="sbagliato()">
+                380V DC
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Cosa rileva un sensore induttivo?</h2>
+
+            <button onclick="corretto()">
+                Metalli
+            </button>
+
+            <button onclick="sbagliato()">
+                Liquidi
+            </button>
+
+            <button onclick="sbagliato()">
+                Temperatura
+            </button>
+
+            <button onclick="sbagliato()">
+                Pressione
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Catalogo Cablaggi</p>
+    </footer>
+    
+</body>
+</html>
