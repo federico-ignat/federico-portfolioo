@@ -34,31 +34,34 @@
    
 
      
-
+    
     <div class="container">
         <div class="card">
+
+            
 
             <h2>
                 Qual è il colore del conduttore PE?
             </h2>
 
-            <button onclick="corretto()">
+            <button onclick="corretto('risultato1')">
                 Giallo/Verde
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato1')">
                 Blu
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato1')">
                 bianco
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato1')">
                 nero
             </button>
 
-            <h3 id="risultato"></h3>
+            <h3 id="risultato1"></h3>
+          
 
         </div>
     </div>
@@ -68,21 +71,23 @@
 
             <h2>A quale tensione lavora normalmente un PLC industriale?</h2>
 
-            <button onclick="corretto()">
+            <button onclick="corretto('risultato2')">
                 24V DC
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato2')">
                 5V
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato2')">
                 1000V
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato2')">
                 380V DC
             </button>
+
+            <h3 id="risultato2"></h3>
         </div>
     </div>
 
@@ -91,23 +96,37 @@
 
             <h2>Cosa rileva un sensore induttivo?</h2>
 
-            <button onclick="corretto()">
+            <button onclick="corretto('risultato3')">
                 Metalli
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato3')">
                 Liquidi
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato3')">
                 Temperatura
             </button>
 
-            <button onclick="sbagliato()">
+            <button onclick="sbagliato('risultato3')">
                 Pressione
             </button>
+
+            <h3 id="risultato3"></h3>
         </div>
     </div>
+
+    <script>
+function corretto(id) {
+    document.getElementById(id).innerHTML =
+    "✅ Risposta corretta!";
+}
+
+function sbagliato(id) {
+    document.getElementById(id).innerHTML =
+    "❌ Risposta sbagliata!";
+}
+</script>
 
     <footer>
         <p>© 2026 Catalogo Cablaggi</p>
