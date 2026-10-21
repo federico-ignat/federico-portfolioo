@@ -32,6 +32,7 @@
             <a href="laboratorio.html">Laboratorio</a>
             <a href="contatti.html">Contatti</a>
             <a href="cablaggio.html">Cablaggio</a>
+             <a href="schema-interattivo.html">Schema interattivo</a>
         </nav>
     </header>
 
@@ -39,6 +40,14 @@
         <h2 id="punteggio">
             🏆Punteggio: 0/3
         </h2>
+    </div>
+
+    <div class="card">
+        <h3>Progressi Quiz</h3>
+
+        <div class="barra">
+            <div id="progresso"></div>
+        </div>
     </div>
    
 
@@ -140,6 +149,8 @@
 
     <script>
 
+        let risposteDate = 0;
+
 let punteggio = 0;
 
 function corretto(id){
@@ -152,6 +163,8 @@ function corretto(id){
         "✅ Risposta corretta!";
 
         punteggio++;
+        risposteDate++;
+        aggiornaBarra();
 
         document.getElementById("punteggio").innerHTML =
         "🏆 Punteggio: " + punteggio + " / 3";
@@ -168,6 +181,9 @@ function sbagliato(id){
 
         risultato.innerHTML =
         "❌ Risposta sbagliata!";
+
+        risposteDate++;
+        aggiornaBarra();
     }
 }
 
@@ -181,6 +197,10 @@ function controllaFineQuiz(){
         document.getElementById("certificato").style.display =
         "block";
     }
+}
+
+function aggiornaBara(){
+    let percentuale = (risposteDate / 3) * 100; document.getElementById("progresso").style.width = percentuale + "%";
 }
 
 
