@@ -167,6 +167,10 @@ nav a:hover{
         0 0 20px #00d4ff;
 }
 
+.card p{
+    text-align: center;
+}
+
 /* CARD LINK */
 
 .card-link{
@@ -275,4 +279,23 @@ h1,
 h2,
 h3{
     text-align: center;
+}
+
+/*Componenti*/
+
+.componenti-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:40px auto;
+}
+
+.componenti-grid .card{
+    text-align:center;
 }
