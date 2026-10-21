@@ -117,6 +117,8 @@ nav a:hover{
     text-decoration:none;
 
     font-weight:bold;
+
+    margin: 30px auto;
 }
 
 .btn:hover{
