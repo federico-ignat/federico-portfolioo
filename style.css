@@ -22,6 +22,7 @@ header{
     border-bottom:3px solid #00d4ff;
     position:sticky;
     top:0;
+    z-index: 1000;
 }
 
 header h1{
@@ -100,9 +101,13 @@ nav a:hover{
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     padding:20px;
+}
+
+.quiz.container{
+    margin-top: 120px;
 }
 
 *{
@@ -379,11 +384,12 @@ pre{
 }
 
 footer{
+    margin-top: 80px;
+    padding: 40px;
     text-align: center;
-    padding: 30px;
-    margin-top: 10px;
     border-top: 2px solid #00d4ff;
     background: #0f172a;
+    color: #d1d5db;
 }
 
 h1 {
@@ -585,4 +591,28 @@ body{
 
 .popup-completato h2{
     color: #00ff88;
+}
+
+body{
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease;
+}
+
+.card{
+    transition:
+        background 0.5s ease,
+        color 0.5s ease,
+        box-shadow 0.5s ease,
+        transform 0.3s ease;
+}
+
+header{
+    transition:
+        background 0.5s ease,
+        border-color 0.5s ease;
+}
+
+nav a{
+    transition: all 0.3s ease;
 }
