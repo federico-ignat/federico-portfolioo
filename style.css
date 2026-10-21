@@ -287,6 +287,8 @@ li{
         0 0 20px #00d4ff;
 }
 
+
+
 /* SEPARATORE */
 
 .separator{
@@ -445,4 +447,92 @@ p{
     100%{
         opacity:1;
     }
+}
+
+.intro-alimentatore{
+    max-width:900px;
+    margin:40px auto;
+    text-align:center;
+}
+
+.btn{
+    width:auto;
+    display:inline-block;
+}
+
+.stato-sistema{
+    text-align:center;
+
+    width:100%;
+
+    margin:15px auto;
+
+    color:#00ff88;
+
+    font-weight:bold;
+}
+
+#ricerca{
+    display:block;
+
+    width:80%;
+    max-width:500px;
+
+    margin:30px auto;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #00d4ff;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:16px;
+}
+
+#risultato-finale{
+
+    text-align:center;
+
+    color:#00ff88;
+
+    margin-top:30px;
+
+    font-size:1.5rem;
+
+    font-weight:bold;
+}
+
+.schema{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin:50px;
+}
+
+.schema-box{
+    text-decoration:none;
+    color:white;
+
+    background:rgba(255,255,255,0.05);
+
+    padding:30px;
+
+    border-radius:15px;
+
+    border:1px solid #00d4ff;
+
+    transition:0.3s;
+}
+
+.schema-box:hover{
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 10px #00d4ff,
+    0 0 20px #00d4ff;
 }

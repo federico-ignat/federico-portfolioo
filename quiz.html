@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Quiz Cablaggi</title>
+    <div class="stato-sistema"></div>
+         🟢 Sistema Operativo | 🔌 Componenti Caricati | ⚡ Database Attivo
+    </div>
 </head>
 <body>
 
@@ -31,6 +34,12 @@
             <a href="cablaggio.html">Cablaggio</a>
         </nav>
     </header>
+
+    <div class="card">
+        <h2 id="punteggio">
+            🏆Punteggio: 0/3
+        </h2>
+    </div>
    
 
      
@@ -116,22 +125,66 @@
                 Pressione
             </button>
 
+            <h2 id="risultato-finale"></h2>
+
             <h3 id="risultato3"></h3>
         </div>
     </div>
 
+    <div id="certificato" class="card" style="display: none;">
+        
+        <h2>🎓Certificato</h2>
+
+        <p>Complimenti! Hai compleatato il quiz base sui cablaggi industriali.</p>
+    </div>
+
     <script>
-function corretto(id) {
-    document.getElementById(id).innerHTML =
-    "✅ Risposta corretta!";
+
+let punteggio = 0;
+
+function corretto(id){
+
+    let risultato = document.getElementById(id);
+
+    if(risultato.innerHTML === ""){
+
+        risultato.innerHTML =
+        "✅ Risposta corretta!";
+
+        punteggio++;
+
+        document.getElementById("punteggio").innerHTML =
+        "🏆 Punteggio: " + punteggio + " / 3";
+
+        controllaFineQuiz();
+    }
 }
 
-function sbagliato(id) {
-    document.getElementById(id).innerHTML =
-    "❌ Risposta sbagliata!";
+function sbagliato(id){
+
+    let risultato = document.getElementById(id);
+
+    if(risultato.innerHTML === ""){
+
+        risultato.innerHTML =
+        "❌ Risposta sbagliata!";
+    }
 }
+
+function controllaFineQuiz(){
+
+    if(punteggio === 3){
+
+        document.getElementById("risultato-finale").innerHTML =
+        "🎓 Complimenti! Hai completato il quiz con 3/3!";
+
+        document.getElementById("certificato").style.display =
+        "block";
+    }
+}
+
+
 </script>
-
 
 
   

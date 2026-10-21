@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Componenti industriali</title>
+       <div class="stato-sistema">
+         🟢 Sistema Operativo | 🔌 Componenti Caricati | ⚡ Database Attivo
+    </div>
 </head>
 <body>
 
@@ -34,41 +37,35 @@
 
     <hr>
 
-    <div class="titolo-sezione">
-        <h2>PLC</h2>
-    </div>
+    <input type="text", id="ricerca", placeholder="🔎Cerca un componente...", onkeyup="cercaComponente()">
     
-
-    <div class="card">
-    <h2>PLC Siemens s7-1200</h2>
+    <div class="card componente">
+    <h2>PLC</h2>
     <p>Viene utilizzato per controllare macchinari e impianti automatici.Permette di gestire ingressi, uscite e comunicazione Ethernet.</p>
     </div>
 
     <div class="separator"></div>
 
-    <div class="titolo-sezione">
-        <h2>Sensori</h2>
+    <div class="card componente">
+    <h2>Sensori</h2>
+    <p>Rileva oggetti metallici senza contatto.<br>I principali sono questi:</p>
     </div>
 
-    <div class="card">
+    <div class="card componente">
     <h2>Sensore induttivo</h2>
     <p>Rileva oggetti metallici senza contatto.<br>Molto comune nei nastri trasportatori.</p>
     </div>
 
-    <div class="card">
+    <div class="card componente">
         <h2>Sensore Fotoelettrico</h2>
         <p>Utilizza un fascio luminoso per rilevare la presenza di oggetti.</p>
     </div>
 
     <div class="separator"></div>
 
-    <div class="titolo-sezione">
-        <h2>Relè e Contattori</h2>
-    </div>
-
-    <div class="card">
+    <div class="card componente">
         <h2>Relè</h2>
-        <p>Dispositivo che permette di comandare un circuito tramite un altro circuito.</p>
+        <p>Dispositivo che permette di comandare un circuito tramite un altro circuito.</p><br>
 
         <h2>Contattore</h2>
         <p>Utilizzato per il comando di motori e carichi di potenza.</p>
@@ -76,25 +73,16 @@
 
     <div class="separator"></div>
 
-    <div class="titolo-sezione">
+    <div class="card componente">
         <h2>Alimentatore</h2>
-    </div>
-
-    <div class="card">
-        <h2>Alimentatore 24V DC</h2>
         <ul>
             <li>Tensione d'ingresso: 230V AC</li>
             <li>Tensione uscita 24V DC</li>
-            <li>Utilizzato per PLC e sensori</li>
             <li>Installazione su guida DIN</li>
         </ul>
     </div>
 
-    <div class="titolo-sezione">
-        <h2>Inverter</h2>
-    </div>
-
-    <div class="card">
+    <div class="card componente">
         <h2>Inverter Motore</h2>
         <ul>
             <li>Controllo della velocità del motore.</li>
@@ -104,12 +92,8 @@
         </ul>
     </div>
 
-    <div class="titolo-sezione">
+    <div class="card componente">
         <h2>Morsetti</h2>
-    </div>
-
-    <div class="card">
-        <h2>Morsetti di collegamento</h2>
         <ul>
             <li>Connesione dei conduttori</li>
             <li>Ordine nel quadro elettrico</li>
@@ -118,10 +102,27 @@
         </ul>
     </div>
 
+    <script>
+        function cercaComponente(){
+            let input = document.getElementById("ricerca").value.toLowerCase();
 
-        
+            let componenti = document.getElementsByClassName("componente");
 
-    
+            for(let i = 0; i < componenti.length; i++) {
+
+                let testo = componenti[i].innerText.toLowerCase();
+
+                if(testo.includes(input)) {
+
+                    componenti[i].style.display = "block";
+
+                } else {
+
+                    componenti[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
    <footer>
         <p>© 2026 Catalogo Cablaggi</p>
