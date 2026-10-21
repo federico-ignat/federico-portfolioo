@@ -616,3 +616,15 @@ header{
 nav a{
     transition: all 0.3s ease;
 }
+
+section{
+    margin-bottom: 80px;
+}
+
+.card{
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(0,212,255,0.2) !important;
+    border-radius: 15px !important;
+    padding: 25px !important;
+    height: auto !important;
+}
