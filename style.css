@@ -217,7 +217,9 @@ li{
     border-radius:10px;
 
     transition:0.3s;
+
 }
+
 
 .img-componente:hover{
     transform:scale(1.05);
@@ -298,4 +300,8 @@ h3{
 
 .componenti-grid .card{
     text-align:center;
+}
+
+p{
+    text-align: center !important;
 }
