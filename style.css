@@ -118,11 +118,14 @@ nav a:hover{
 
     font-weight:bold;
 
+    transition: 0.3s;
+
     margin: 30px auto;
 }
 
 .btn:hover{
     background:white;
+    transform: scale(1.05);
 }
 
 /* CONTAINER */
@@ -136,6 +139,23 @@ nav a:hover{
 }
 
 /* CARD */
+
+.contenitore-alimentatore{
+    max-width:1200px;
+    margin:auto;
+}
+
+.contenitore-alimentatore .card{
+    min-height:180px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+}
 
 .card{
     background:rgba(255,255,255,0.05);
@@ -396,4 +416,33 @@ p{
     padding:12px;
 
     border-radius:10px;
+}
+
+.dati-tecnici{
+    width:320px;
+
+    margin:auto;
+}
+
+.stato-sistema{
+    color:#00ff88;
+
+    font-weight:bold;
+
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        opacity:1;
+    }
+
+    50%{
+        opacity:0.5;
+    }
+
+    100%{
+        opacity:1;
+    }
 }
