@@ -38,7 +38,7 @@
 
     <div class="card">
         <h2 id="punteggio">
-            🏆Punteggio: 0/3
+            🏆Punteggio: 0/10
         </h2>
     </div>
 
@@ -200,7 +200,7 @@
     <div class="container">
         <div class="card">
 
-            <h2>Che tipo di corrente utilizza normalmente un PLC?/h2>
+            <h2>Che tipo di corrente utilizza normalmente un PLC?</h2>
             <br>
 
             <button onclick="corretto('risultato6')">
@@ -356,7 +356,7 @@ function corretto(id){
         aggiornaBarra();
 
         document.getElementById("punteggio").innerHTML =
-        "🏆 Punteggio: " + punteggio + " / 3";
+        "🏆 Punteggio: " + punteggio + " / 10";
 
         controllaFineQuiz();
     }
@@ -371,14 +371,12 @@ function sbagliato(id){
         risultato.innerHTML =
         "❌ Risposta sbagliata!";
 
-        risposteDate++;
-        aggiornaBarra();
     }
 }
 
 function controllaFineQuiz(){
 
-    if(punteggio === 3){
+    if(punteggio === 10){
 
         document.getElementById("risultato-finale").innerHTML =
         "🎓 Complimenti! Hai completato il quiz con 3/3!";
@@ -389,7 +387,7 @@ function controllaFineQuiz(){
 }
 
 function aggiornaBarra(){
-    let percentuale = (risposteDate / 3) * 100; document.getElementById("progresso").style.width = percentuale + "%";
+    let percentuale = (risposteDate / 10) * 100; document.getElementById("progresso").style.width = percentuale + "%";
 }
 
 function resetQuiz(){

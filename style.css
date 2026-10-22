@@ -122,6 +122,10 @@ nav a:hover{
     transform: scale(1.05);
 }
 
+button{
+    margin:8px;
+}
+
 /* CONTAINER */
 
 .container{
