@@ -631,3 +631,29 @@ h2{
 
 }
 
+
+@media (max-width:768px){
+
+    .card{
+        width:90%;
+        max-width:none;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .btn{
+        width:80%;
+        text-align:center;
+    }
+
+}
