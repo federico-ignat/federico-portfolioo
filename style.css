@@ -164,6 +164,8 @@ nav a:hover{
 
     margin:20px auto;
 
+    max-width: 250px;
+
     box-shadow:
         0 0 10px rgba(0,212,255,0.2);
 
