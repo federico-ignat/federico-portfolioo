@@ -72,7 +72,7 @@ nav a:hover{
 /* HERO */
 
 .hero{
-    height: 60vh;
+    height: auto;
 
     display:flex;
     flex-direction:column;
@@ -82,7 +82,7 @@ nav a:hover{
 
     text-align:center;
 
-    padding:20px;
+    padding: 60px 20px;
 }
 
 .hero h2{
@@ -114,7 +114,7 @@ nav a:hover{
 
     transition: 0.3s;
 
-    margin: 30px auto;
+    margin: 15px auto;
 }
 
 .btn:hover{
