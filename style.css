@@ -704,3 +704,88 @@ body{
     }
 
 }
+
+#domanda-giorno{
+    font-size:1.2rem;
+    font-weight:bold;
+    color:#00d4ff;
+}
+
+#risposta-giorno{
+    margin-top:15px;
+    font-size:1.1rem;
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.sicurezza{
+
+    border-left:5px solid #ffcc00;
+
+    background:rgba(255,204,0,0.08);
+
+    padding:20px;
+}
+
+.banner-avviso{
+
+    background:#ffcc00;
+
+    color:#000;
+
+    padding:15px;
+
+    margin:20px auto;
+
+    max-width:900px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    box-shadow:0 0 10px rgba(255,204,0,0.5);
+}
+
+.banner-avviso{
+
+    position:relative;
+
+    background:linear-gradient(
+        90deg,
+        #ffb300,
+        #ffd54f
+    );
+
+    border-left:6px solid #d32f2f;
+
+    color:#000;
+
+    padding:20px;
+
+    margin:20px auto;
+
+    max-width:1000px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    text-align:center;
+}
+
+.chiudi-banner{
+
+    position:absolute;
+
+    top:10px;
+
+    right:15px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    font-weight:bold;
+}

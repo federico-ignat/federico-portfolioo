@@ -12,6 +12,8 @@
 
 <body>
 
+
+
     <body id="top"></body>
 
     <header>
@@ -45,6 +47,7 @@
             <a href="laboratorio.html">Laboratorio</a>
             <a href="contatti.html">Contatti</a>
             <a href="cablaggio.html">Cablaggio</a>
+            <a href="sicurezza-notetecniche.html">Sicurezza e Note Tecniche</a>
          
         </nav>
     </header>
@@ -102,6 +105,19 @@
         </div>
         </a>
 
+        <div class="card">
+            <h2>Domanda del giorno</h2>
+
+            <p id="domanda-giorno"></p>
+
+            <button onclick="mostraRisposta()" class="btn">
+                Mostra risposta
+            </button>
+
+            <p id="risposta-giorno"></p>
+
+        </div>
+
     </section>
     
     <div class="separator"></div>
@@ -128,6 +144,46 @@
              Torna su
         </a>
     </div>
+
+    <script>
+    const domande = [
+
+{
+    domanda: "Quale è il colore del conduttore PE?",
+    risposta: "Giallo/Verde"
+},
+
+{
+    domanda: "A quale tensione lavora normalmente un PLC?",
+    risposta: "24V DC"
+},
+
+{
+    domanda: "Cosa rileva un sensore induttivo?",
+    risposta: "Metalli"
+},
+
+{
+    domanda: "Quale componente converte la 230V AC in 24V DC?",
+    risposta: "Alimentatore"
+}
+
+];
+
+const indice =
+new Date().getDate() % domande.length;
+
+document.getElementById("domanda-giorno").innerHTML =
+domande[indice].domanda;
+
+function mostraRisposta(){
+
+    document.getElementById("risposta-giorno").innerHTML =
+    "✅ " + domande[indice].risposta;
+
+}
+        
+    </script>
 
     <footer>
         <p>© 2026 Catalogo Cablaggi</p>
