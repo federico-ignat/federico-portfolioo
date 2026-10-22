@@ -613,7 +613,7 @@ h2{
 
         display:grid;
 
-        grid-template-columns:repeat(4, 1fr);
+        grid-template-columns:repeat(3, 1fr);
 
         gap:10px;
 
@@ -678,4 +678,11 @@ body{
         font-size: 1rem;
     }
 
+}
+
+.hero h1,
+.hero h2,
+.hero p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
