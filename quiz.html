@@ -65,6 +65,7 @@
             <h2>
                 Qual è il colore del conduttore PE?
             </h2>
+            <br>
 
             <button onclick="corretto('risultato1')">
                 Giallo/Verde
@@ -92,6 +93,7 @@
         <div class="card">
 
             <h2>A quale tensione lavora normalmente un PLC industriale?</h2>
+            <br>
 
             <button onclick="corretto('risultato2')">
                 24V DC
@@ -116,27 +118,214 @@
     <div class="container">
         <div class="card">
 
-            <h2>Cosa rileva un sensore induttivo?</h2>
+            <h2>Qual è il funzionamento di un magnotermico?</h2>
+            <br>
+
+            <button onclick="sbagliato('risultato3')">
+                Alimentare il PLC
+            </button>
+
+            <button onclick="sbagliato('risultato3')">
+                Rilevare metalli
+            </button>
 
             <button onclick="corretto('risultato3')">
+                Proteggere il circuito
+            </button>
+
+            <button onclick="sbagliato('risultato3')">
+                Controllare un motore
+            </button>
+
+            <h3 id="risultato3"></h3>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Quale componente converte la 230V AC in 24V DC?</h2>
+            <br>
+
+            <button onclick="sbagliato('risultato4')">
+                Morsetto
+            </button>
+
+            <button onclick="sbagliato('risultato4')">
+                PLC
+            </button>
+
+            <button onclick="sbagliato('risultato4')">
+                Sensore
+            </button>
+
+            <button onclick="corretto('risultato4')">
+                Alimentatore
+            </button>
+
+            <h3 id="risultato4"></h3>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Cosa collega un morsetto?</h2>
+            <br>
+
+            <button onclick="sbagliato('risultato5')">
+                I sensori ottici
+            </button>
+
+            <button onclick="corretto('risultato5')">
+                I conduttori elettrici
+            </button>
+
+            <button onclick="sbagliato('risultato5')">
+                Il programma PLC
+            </button>
+
+            <button onclick="sbagliato('risultato5')">
+                Il motore
+            </button>
+
+            <h3 id="risultato5"></h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Che tipo di corrente utilizza normalmente un PLC?/h2>
+            <br>
+
+            <button onclick="corretto('risultato6')">
+                24V DC
+            </button>
+
+            <button onclick="sbagliato('risultato6')">
+                12V AC 
+            </button>
+
+            <button onclick="sbagliato('risultato6')">
+                400V DC
+            </button>
+
+            <button onclick="sbagliato('risultato6')">
+                230V DC
+            </button>
+
+            <h3 id="risultato6"></h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Cosa rileva un sensore fotoelettrico?</h2>
+            <br>
+
+            <button onclick="sbagliato('risultato7')">
+                Il cablaggio del quadro
+            </button>
+
+            <button onclick="sbagliato('risultato7')">
+                La tensione elettrica
+            </button>
+
+            <button onclick="corretto('risultato7')">
+                La presenza di un oggetto
+            </button>
+
+            <button onclick="sbagliato('risultato7')">
+                La corrente del PLC
+            </button>
+
+            <h3 id="risultato7"></h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Quale dispositivo protegge le persone dai contatti indiretti?</h2>
+            <br>
+
+            <button onclick="sbagliato('risultato8')">
+                Alimentatore
+            </button>
+
+            <button onclick="sbagliato('risultato8')">
+                Sensore induttivo
+            </button>
+
+            <button onclick="corretto('risultato8')">
+                Interrutore differenziale
+            </button>
+
+            <button onclick="sbagliato('risultato8')">
+                PLC
+            </button>
+
+            <h3 id="risultato8"></h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Cosa significa la sigla PLC?</h2>
+            <br>
+
+            <button onclick="corretto('risultato9')">
+                Programmable Logic Controller
+            </button>
+
+            <button onclick="sbagliato('risultato9')">
+                Programmable Light Circuit
+            </button>
+
+            <button onclick="sbagliato('risultato9')">
+                Primary Logic Cable
+            </button>
+
+            <button onclick="sbagliato('risultato9')">
+                Power Line Control
+            </button>
+
+            <h3 id="risultato9"></h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Cosa rileva un sensore induttivo?</h2>
+            <br>
+
+            <button onclick="corretto('risultato10')">
                 Metalli
             </button>
 
-            <button onclick="sbagliato('risultato3')">
+            <button onclick="sbagliato('risultato10')">
                 Liquidi
             </button>
 
-            <button onclick="sbagliato('risultato3')">
+            <button onclick="sbagliato('risultato10')">
                 Temperatura
             </button>
 
-            <button onclick="sbagliato('risultato3')">
+            <button onclick="sbagliato('risultato10')">
                 Pressione
             </button>
 
             <h2 id="risultato-finale"></h2>
 
-            <h3 id="risultato3"></h3>
+            <h3 id="risultato10"></h3>
         </div>
     </div>
 
@@ -203,9 +392,21 @@ function aggiornaBarra(){
     let percentuale = (risposteDate / 3) * 100; document.getElementById("progresso").style.width = percentuale + "%";
 }
 
+function resetQuiz(){
+    location.reload();
+}
+
 
 </script>
 
+    
+
+    <div style="text-align: center; margin-top: 30px;">
+
+        <button onclick="resetQuiz()" class="btn">
+            🔄Reset Quiz
+        </button>
+    </div>
 
  <div style="text-align: center; margin: 20px;">
         <a href="#top" class="btn">
