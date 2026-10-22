@@ -670,8 +670,8 @@ body{
 
 @media (max-width:768px){
 
-    .hero h1{
-        font-size: 2rem;
+    .hero h2{
+        font-size: 1.8rem;
     }
 
     .hero p{
@@ -685,4 +685,22 @@ body{
 .hero p{
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+
+@media (max-width:768px){
+
+    nav{
+        display:grid !important;
+        grid-template-columns:repeat(3,1fr);
+        gap:4px;
+        width:100%;
+    }
+
+    nav a{
+        margin:0 !important;
+        padding:4px;
+        font-size:11px;
+        white-space:normal;
+    }
+
 }
