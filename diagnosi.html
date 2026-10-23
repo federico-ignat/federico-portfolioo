@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosi Industriale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:768px)">
+</head>
+<body>
+
+<header>
+    <h1>🔧 Diagnosi Industriale</h1>
+</header>
+
+<div class="card">
+
+    <h2>Quale problema riscontri?</h2>
+
+    <button onclick="diagnosiPLC()" class="btn">
+        🧠 PLC spento
+    </button>
+
+    <button onclick="diagnosiSensore()" class="btn">
+        📡 Sensore non funziona
+    </button>
+
+    <button onclick="diagnosiMotore()" class="btn">
+        ⚙️ Motore fermo
+    </button>
+
+    <button onclick="diagnosiAlimentatore()" class="btn">
+        ⚡ Alimentatore senza uscita
+    </button>
+
+    <div id="risultato"></div>
+
+</div>
+
+<script>
+
+function diagnosiPLC(){
+
+    document.getElementById("risultato").innerHTML =
+
+    `<h2>🧠 PLC Spento</h2>
+
+    <p>✅ Verifica:</p>
+
+    <ul>
+        <li>Presenza alimentazione</li>
+        <li>Fusibili</li>
+        <li>Alimentatore 24V</li>
+        <li>Cablaggio PLC</li>
+    </ul>`;
+}
+
+function diagnosiSensore(){
+
+    document.getElementById("risultato").innerHTML =
+
+    `<h2>📡 Sensore non funziona</h2>
+
+    <p>✅ Controlla:</p>
+
+    <ul>
+        <li>Tensione 24V</li>
+        <li>Distanza dall'oggetto</li>
+        <li>LED del sensore</li>
+        <li>Cablaggio</li>
+    </ul>`;
+}
+
+function diagnosiMotore(){
+
+    document.getElementById("risultato").innerHTML =
+
+    `<h2>⚙️ Motore fermo</h2>
+
+    <p>✅ Controlla:</p>
+
+    <ul>
+        <li>Contattore</li>
+        <li>Protezioni</li>
+        <li>Comando PLC</li>
+        <li>Alimentazione motore</li>
+    </ul>`;
+}
+
+function diagnosiAlimentatore(){
+
+    document.getElementById("risultato").innerHTML =
+
+    `<h2>⚡ Alimentatore senza uscita</h2>
+
+    <p>✅ Controlla:</p>
+
+    <ul>
+        <li>230V in ingresso</li>
+        <li>Fusibili</li>
+        <li>Morsetti</li>
+        <li>Tensione in uscita</li>
+    </ul>`;
+}
+
+</script>
+
+</body>
+</html>

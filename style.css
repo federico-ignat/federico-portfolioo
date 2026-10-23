@@ -789,3 +789,206 @@ body{
 
     font-weight:bold;
 }
+
+#risposta{
+    width:400px;
+    margin:20px auto;
+    padding:15px;
+    background-color:#f5f5f5;
+    border-radius:8px;
+    color:black;
+   
+}
+
+
+#domanda{
+    display:block;
+    width:400px;
+    margin:0;
+}
+
+button{
+    display:block;
+    margin: 0;
+}
+
+.chat-input{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    margin-top: 30px;
+}
+
+.domande-rapide{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+}
+
+.chat-input{
+    margin-top:20px;
+}
+
+h3{
+    margin-bottom:10px;
+}
+
+.domande-rapide{
+    margin:10px 0;
+}
+
+.chat-input{
+    margin-top:10px;
+}
+
+.domande-rapide button{
+    background:rgba(255,255,255,0.05);
+    color:white;
+
+    border:1px solid #00d4ff;
+    border-radius:8px;
+
+    padding:6px 12px;
+
+    font-size:13px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.domande-rapide button:hover{
+    background:#00d4ff;
+    color:black;
+
+    box-shadow:
+        0 0 10px #00d4ff;
+}
+
+.chat-input button{
+    background:rgba(255,255,255,0.05);
+    color:white;
+
+    border:1px solid #00d4ff;
+    border-radius:8px;
+
+    padding:6px 12px;
+
+    font-size:13px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.chat-input button:hover{
+    background:#00d4ff;
+    color:black;
+
+    box-shadow:
+        0 0 10px #00d4ff,
+        0 0 20px #00d4ff;
+}
+
+main p{
+    text-align: center;
+    width: 100%;
+}
+
+h3{
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width:768px){
+
+    header{
+        padding:15px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.5rem;
+    }
+
+    h3{
+        font-size:1.2rem;
+    }
+
+    nav{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:8px;
+        width:100%;
+    }
+
+    nav a{
+        font-size:12px;
+        padding:6px;
+        margin:0;
+    }
+
+    .domande-rapide{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:8px;
+        padding:0 10px;
+    }
+
+    .domande-rapide button{
+        font-size:12px;
+        padding:6px 10px;
+    }
+
+    .chat-input{
+        flex-direction:column;
+        gap:10px;
+        transform:none;
+    }
+
+    #domanda{
+        width:90%;
+        max-width:350px;
+    }
+
+    .chat-input button{
+        width:120px;
+    }
+
+    #risposta{
+        width:90%;
+        max-width:350px;
+    }
+
+    .card{
+        width:95%;
+        max-width:none;
+    }
+
+    .schema{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .schema-box{
+        width:90%;
+    }
+
+    footer{
+        padding:20px;
+    }
+}
+
+
+

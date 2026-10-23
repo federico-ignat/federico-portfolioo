@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        
+
+        <div id="chat"></div>
+
+         <header>
+
+          <script async src="https://federico-ignat.github.io/federico-portfolioo/gtag/js?id=G-RRRGFQTZC1"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('confing', 'G-RRRGFQTZC1');
+    </script>
+        
+       <p id="clock"></p>
+
+        <script>
+            setInterval(() => {
+                document.getElementById("clock").innerText = 
+                new Date().toLocaleTimeString();
+            }, 1000);
+        </script>
+        <h1>Assistente Tecnico</h1>
+      
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="componenti.html">Componenti</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="schemi.html">Schemi</a>
+            <a href="progetti.html">Progetti</a>
+            <a href="laboratorio.html">Laboratorio</a>
+            <a href="contatti.html">Contatti</a>
+            <a href="cablaggio.html">Cablaggio</a>
+            
+         
+        </nav>
+    </header>
+
+    <h3>Argomenti Disponibili</h3>
+
+<div class="domande-rapide">
+
+  <button type="button">Contattore</button>
+  <button type="button">PLC</button>
+  <button type="button">Sensore</button>
+  <button type="button">Alimentatore</button>
+  <button type="button">Magnetotermici</button>
+  <button type="button">Morsetti</button>
+  <button type="button">Cablaggio</button>
+  <button type="button">Diagnosi</button>
+  <button type="button">Sicurezza</button>
+  <button type="button">Schemi</button>
+
+</div>
+
+<br>
+
+        <div class="chat-input">
+
+        <input
+            type="text"
+            id="domanda"
+            placeholder="Scrivi una domanda...">
+
+            <button onclick="rispondi()">
+                invia
+            </button>
+
+            <button onclick="pulisciChat()">
+                Cancella
+            </button>
+
+            <button onclick="domandaCasuale()">
+                Domanda Casuale
+            </button>
+            </div>
+
+
+            <div id="risposta"></div>
+        
+        
+        </main>
+
+        <script>
+            function rispondi(){
+                let domanda = document
+                .getElementById("domanda")
+                .value 
+                .toLowerCase()
+
+                let risposta = "";
+
+                if(domanda.includes("contattore")){
+                    risposta = "Il contattore serve a comandare motori e altri carichi elettrici.";
+                }
+
+                else if(domanda.includes("differenziale")){
+                    risposta = "Il differenziale protegge dalle dispersioni di corrente verso terra."
+                }
+
+                else if(domanda.includes("magnetotermico")){
+                    risposta = "Il magnetotermico protegge da sovraccarichi e cortocircuiti.";
+                }
+
+                else if(domanda.includes("relè termico")){
+                    risposta = "Il relè termico protegge il motore dai sovraccarichi.";
+                }
+
+                else if(domanda.includes("motore")){
+                    risposta = "Controlla l'alimentazione, contattore, relè termico e collegamenti.";
+                }
+
+                else if(domanda.includes("cablaggio")){
+                    risposta = "Verifica i collegamenti, i morsetti e il serraggio dei cavi.";
+                }
+
+                else if(domanda.includes("sicurezza")){
+                    risposta = "Prima di intervenire togli alimentazione e usa i DPI adeguati.";
+                }
+
+                else if(domanda.includes("alimentatore")){
+                    risposta = "L'alimentatore trasforma la tensione e fornisce energia ai componenti del circuito.";
+                }
+
+                else if(domanda.includes("sensore")){
+                    risposta = "Un sensore rileva uuna grandezza fidica e la trasforma in un segnale utilizzabile.";
+                }
+
+                else if(domanda.includes("plc")){
+                    risposta = "Il PLC è un controllore logico programmabile utilizzato nell'automazione industriale.";
+                }
+
+                else if(domanda.includes("morsetti")){
+                    risposta = "I morsetti servono a collegare in modo sicuri i conduttori elettrici.";
+                }
+
+                else if(domanda.includes("diagnosi")){
+                    risposta = "La diagnosi consiste nell'individuare la causa di un guasto attraverso controlli e verifiche.";
+                }
+
+                else if(domanda.includes("schema")){
+                    risposta = "Gli schemi elettrici rappresentano graficamente i collegamenti tra i componenti.";
+                }
+
+                else if(domanda.includes("laboratorio")){
+                    risposta = "Nel laboratorio si eseguono prove pratiche, cablaggi e attività di automazione.";
+                }
+
+                else if(domanda.includes("progetto")){
+                    risposta = "Nella sezione progetti sono raccolte le attività e le realizzazioni tecniche sviluppate.";
+                }
+
+              
+
+                else{
+                    risposta = "Non conosco ancora la rispota a questa domanda.";
+                }
+
+                document.getElementById("risposta").innerHTML = risposta;
+            }
+
+            document.getElementById("domanda")
+            .addEventListener("keydown", function(event){
+                if(event.key == "Enter"){
+                    rispondi();
+                }
+            });
+
+            function pulisciChat(){
+                document.getElementById("domanda").value = "";
+                document.getElementById("risposta").innerHTML = "";
+            }
+
+            function domandaCasuale(){
+                let domande = [
+                    "contattore",
+                    "plc",
+                    "sensore",
+                    "alimentatore",
+                    "magnetotermico",
+                    "morsetti"
+                ];
+
+                let scelta = domande[
+                    Math.floor(Math.random() * domande.length)
+                ];
+
+                document.getElementById("domanda").value = scelta;
+            }
+        </script>
+
+
+    <footer>
+        <p>© 2026 Catalogo Cablaggi</p>
+    </footer>
+   
+
+    
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.6rem;
+    }
+
+    h3{
+        font-size:1.3rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    nav{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:8px;
+        width:100%;
+    }
+
+    nav a{
+        margin:0;
+        padding:8px;
+        font-size:13px;
+        text-align:center;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .chat-input{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    #domanda{
+        width:90%;
+        max-width:350px;
+    }
+
+    #risposta{
+        width:90%;
+        max-width:350px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .card,
+    .progetto-card,
+    .laboratorio-card{
+
+        width:90%;
+        max-width:none;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .schema{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .schema-box{
+        width:90%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+}
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+@media (max-width:768px){
+
+    .hero{
+        padding:30px 15px;
+    }
+
+    .hero h2{
+        font-size:1.8rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .card{
+        border-radius:15px;
+        padding:20px;
+        margin:15px auto;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .img-componente{
+        width:120px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    footer{
+        padding:20px 10px;
+        font-size:14px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .btn{
+        width:90%;
+        max-width:300px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .domande-rapide button{
+        font-size:12px;
+        padding:5px 10px;
+    }
+
+    .chat-input button{
+        width:120px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    body{
+        font-size:15px;
+    }
+
+}
