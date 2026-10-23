@@ -258,7 +258,7 @@ button{
 
 ul{
     margin-top:10px;
-    padding-left:20px;
+    padding-left:0px;
 }
 
 li{
@@ -990,5 +990,9 @@ h3{
     }
 }
 
+.card button{
+    display:block;
+    margin:10px auto;
+}
 
 

@@ -44,12 +44,12 @@
     }
 
     #domanda{
-        width:90%;
+        width:95%;
         max-width:350px;
     }
 
     #risposta{
-        width:90%;
+        width:95%;
         max-width:350px;
     }
 
@@ -163,6 +163,81 @@ body{
 
     body{
         font-size:15px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    main{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    button,
+    .btn{
+        min-height:44px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .card,
+    .laboratorio-card,
+    .progetto-card{
+        width:95%;
+        max-width:none;
+    }
+
+}
+
+@media (max-width:768px){
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .card button{
+        width:100%;
+        max-width:280px;
+        margin:8px auto;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .card button{
+        display:block;
+        width:90%;
+        max-width:300px;
+        margin:10px auto;
+        text-align:center;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .card{
+        text-align:center;
+    }
+
+    .card button{
+        display:block;
+        width:90%;
+        max-width:280px;
+        margin:10px auto !important;
     }
 
 }
