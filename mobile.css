@@ -241,3 +241,14 @@ body{
     }
 
 }
+
+@media (max-width:768px){
+
+    nav a{
+        min-height:44px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+}
